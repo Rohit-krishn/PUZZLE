@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Secret Message</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="cipher-container">
+        <div class="card">
+            <h1>The Two-Track Cipher</h1>
+            <p class="subtitle">Decode the message to reveal the truth.</p>
+
+            <div class="cipher-clues">
+                <div class="clue">
+                    <span class="track">Track 2</span> : Verse 1 - Line 6 - Word 3
+                </div>
+                <div class="clue">
+                    <span class="track">Track 2</span> : Chorus - Line 1 - Word 2
+                </div>
+                <div class="clue">
+                    <span class="track">Track 1</span> : Verse 1 - Line 3 - Word 5
+                </div>
+            </div>
+
+            <div class="hint">
+                <p><strong>Key:</strong> [Track] : [Section] - [Line] - [Word]</p>
+                <p>Track 1: Madonna – "La Isla Bonita"<br>
+                    Track 2: Eiffel 65 – "Blue (Da Ba Dee)"</p>
+            </div>
+
+            <form id="passcode-form">
+                <input type="text" id="passcode-input" placeholder="Enter the passcode..." autocomplete="off">
+                <button type="submit">Unlock</button>
+            </form>
+            <p id="error-message" class="hidden">Incorrect passcode. Try again.</p>
+        </div>
+    </div>
+
+    <div class="container hidden" id="message-container">
+        <div class="message-card">
+            <h2 class="salutation">My blue eyes,</h2>
+            <div class="poem">
+                <p>You look breathtaking when your hair falls loose, sweeping gently down just one side of your face.
+                </p>
+                <p>There is a striking truth in your eyes—an honest, endless darkness within those purest white. Holding
+                    a gaze so bright that shines through the darkness of the night.</p>
+                <p>With cheeks so soft and flushed so red, the softness fills your heart and makes you melt.</p>
+                <p>With the smile on those lips that makes you wish you were right there.</p>
+                <p>Oh my love,<br>You are a vision I could spend a lifetime admiring and wish to be there.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
